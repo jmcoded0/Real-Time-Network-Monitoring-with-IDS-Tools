@@ -31,8 +31,6 @@ To bring this network monitoring dream to life, I'm relying on a carefully selec
 
 * **Suricata (My Network Sentinel - IDS/IPS):** This powerful open-source tool is my front-line defense. I'll configure Suricata in Intrusion Detection System (IDS) mode. It's like having a highly trained guard dog constantly sniffing the network packets, looking for signatures of known attacks, policy violations, and suspicious behavior. When it finds something, it generates an alert – a crucial piece of information that will eventually feed into my Splunk instance.
 
-* **Splunk Enterprise & Universal Forwarder (My Unified Intelligence Platform - Future Integration):** My existing Splunk Enterprise instance on Kali will act as the central brain for future data aggregation. I plan to configure my Splunk Universal Forwarder to pick up all the alerts from Suricata. Shipping this data to Splunk will allow me to correlate network events with my existing system logs, visualize patterns, build dashboards, and truly understand the full scope of any activity in my lab.
-
 ---
 ---
 
