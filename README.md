@@ -36,4 +36,11 @@ To bring this network monitoring dream to life, I'm relying on a carefully selec
 ---
 ---
 
+## 📖 Full Documentation
+📄 [Click here to view the full project documentation](https://github.com/jmcoded0/Network-Monitoring-IDS-Lab/blob/main/Documenting.md)
+
+---
+
+---
+
 **This hands-on experience has truly solidified my foundational skills and opened exciting avenues for deeper exploration into the world of network security.**
