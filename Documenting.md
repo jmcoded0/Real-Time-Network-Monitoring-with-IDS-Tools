@@ -151,8 +151,6 @@ With my isolated lab network finally humming, it's time to bring in the big guns
         ```
     After making these changes, I saved the `suricata.yaml` file (`Ctrl+X`, `Y`, Enter). Now, Suricata is properly configured to monitor my lab environment!
 
-* **Screenshot:**
-    **Show your Kali Linux terminal displaying the relevant sections of `/etc/suricata/suricata.yaml` open in `nano`, specifically highlighting the `interface: eth1` line (uncommented) within the `af-packet` section and the `HOME_NET` variable set to `[192.168.117.0/24]`.**
     ![Configuring Suricata YAML]![VirtualBox_Kali Linux_29_06_2025_04_03_34](https://github.com/user-attachments/assets/981aaeef-b795-42ab-a70e-5f5ffb1d42a0)
 ### 2.2. **Updating Suricata Rules**
 
@@ -163,8 +161,6 @@ With my isolated lab network finally humming, it's time to bring in the big guns
     ```
     The command successfully downloaded and compiled the latest rulesets, a process that involved fetching from various sources and then enabling the newly acquired signatures. This crucial step equipped Suricata with the most current knowledge of threats, making it ready to function as an effective network sentinel.
 
-* **Screenshot:**
-    **Show your Kali Linux terminal with the output of the `sudo suricata-update` command, confirming the successful rule update.**
     ![Updating Suricata Rules]![VirtualBox_Kali Linux_29_06_2025_04_09_24](https://github.com/user-attachments/assets/4cc2486e-e57a-4f40-b142-ab48baea7663)
   ### 2.3. **Re-enabling Host-Only Adapter & Starting Suricata for Monitoring**
 
@@ -177,8 +173,6 @@ With my isolated lab network finally humming, it's time to bring in the big guns
     ```
     The output confirmed that Suricata version 7.0.10 RELEASE was successfully running in SYSTEM mode, indicating that my IDS was now actively monitoring the `eth1` interface for any suspicious activities within my isolated lab network.
 
-* **Screenshot:**
-    **Show your Kali Linux terminal displaying the output of the `sudo suricata -c /etc/suricata/suricata.yaml -i eth1` command, indicating that Suricata has successfully started and is listening on `eth1`.**
     ![Starting Suricata IDS]![VirtualBox_Kali Linux_29_06_2025_04_14_36](https://github.com/user-attachments/assets/88b26b4c-20bb-4384-a603-dae642fb62b9)
   ## 🧪 **Phase 3: Testing Our IDS - Triggering and Verifying Alerts**
 
@@ -193,10 +187,7 @@ With Suricata now actively monitoring my Host-Only network, the next crucial ste
     ```
     This command floods Metasploitable2 with ICMP echo requests, which Suricata, if configured correctly, should flag as suspicious and generate an alert. I let this ping run for a few seconds to ensure enough traffic was generated for detection.
 
-* **Screenshot:**
-    **Show your Kali Linux VM desktop with TWO terminal windows open:**
-    * **Terminal 1 (Left/Top):** Displaying Suricata running in the foreground (from the previous step, confirming "Suricata version ... running in SYSTEM mode").
-    * **Terminal 2 (Right/Bottom):** Displaying the active `ping 192.168.117.3` command to Metasploitable2.
+
     ![Triggering ICMP Alert]![VirtualBox_Kali Linux_29_06_2025_04_22_28](https://github.com/user-attachments/assets/500c4ebe-d60e-4f89-9794-73e66e036ed4)
 ![VirtualBox_Kali Linux_29_06_2025_04_26_27](https://github.com/user-attachments/assets/0e1d5e08-2de0-4f8b-94b6-d02ea8196c01)
 
