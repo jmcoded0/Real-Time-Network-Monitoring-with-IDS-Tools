@@ -1,6 +1,6 @@
-# 🚀 My Personal Odyssey: Building a Network Monitoring & Intrusion Detection Lab
+# 🚀 Real-Time Network Monitoring with IDS Tools
 
-Hey everyone! Buckle up, because this project is my deep dive into the fascinating, often chaotic, world of **network security and threat hunting**. After pouring my efforts into setting up my Splunk log analysis lab – which was an absolute game-changer for understanding system events – I hit a crucial realization: logs tell a story, but they don't always show the *entire* picture. To truly defend, you need to see the conversations happening *on the wires* themselves. That's why I embarked on this new journey: to build my very own Network Monitoring and Intrusion Detection System (IDS) lab.
+This project is my deep dive into the fascinating, often chaotic, world of **network security and threat hunting**. After pouring my efforts into setting up my Splunk log analysis lab – which was an absolute game-changer for understanding system events – I hit a crucial realization: logs tell a story, but they don't always show the *entire* picture. To truly defend, you need to see the conversations happening *on the wires* themselves. That's why I embarked on this new journey: to build my very own Network Monitoring and Intrusion Detection System (IDS) lab.
 
 This isn't just about following a guide; it's about pushing my boundaries, understanding attacks from a network perspective, and getting hands-on with the tools that security professionals use every single day. I'm building an isolated ecosystem right inside VirtualBox, where I can safely let loose and observe both friendly and, more importantly, *unfriendly* network traffic.
 
